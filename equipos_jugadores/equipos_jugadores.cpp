@@ -10,7 +10,7 @@ class EquipoFutbol{
         int puntosTemporada;
 
     //Settters
-    void setNombre(string nom){
+    void setNombre(std::string nom){
         nombre = nom;
     }
 
@@ -19,7 +19,7 @@ class EquipoFutbol{
     }
 
     //getters
-    string getNombre(){
+    std::string getNombre(){
         return nombre;
     }
 
