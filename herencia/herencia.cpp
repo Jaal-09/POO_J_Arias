@@ -4,6 +4,9 @@ class Vehiculo{
 
     private:
         int Modelo;
+
+    protected:
+        int VelocidadMaxim;
     
     public:
         void setModelo(int m){
@@ -13,12 +16,20 @@ class Vehiculo{
         void getModelo(){
             std::cout << "El vehiculo es modelo " << Modelo << std::endl;
         }
+
+        void setVelocidadMaxim(int velocidadMaxim){
+            this->VelocidadMaxim = velocidadMaxim;
+        }
 };
 
 class Moto: public Vehiculo{
     public:
         void mostrarTipo(){
             std::cout << "Motocicleta" << std::endl;
+        }
+
+        void MostrarVelocidad(){
+            std::cout << "La veloicidad maxima es " << std::endl;
         }
 };
 
@@ -30,6 +41,7 @@ int main(){
 
     obj.getModelo();
     obj.mostrarTipo();
+    obj.MostrarVelocidad();
 
     return 0;
 }
