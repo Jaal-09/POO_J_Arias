@@ -3,6 +3,14 @@
 #include <cstdlib>
 #include <ctime>
 
+/**
+ * @brief clase Equipo de futbol
+ * 
+ * 
+ */
+ 
+
+
 class EquipoFutbol{
     
     private:
